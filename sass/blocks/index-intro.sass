@@ -1,0 +1,34 @@
+.intro
+	background-color: #BA6C6F 
+	background-image: url(../img/bg-intro-triangle-mobile.svg), url(../img/back-mobile.jpg)
+	background-size: 104%, cover
+	background-repeat: no-repeat
+	background-position:  bottom, center
+	min-height: 390px
+	box-sizing: border-box
+	text-align: center
+	&__text
+		width: 280px
+		height: 220px
+		margin-top: 90px
+
+@media (min-resolution: 1.5dppx)
+	.intro
+			background-image: url(../img/bg-intro-triangle-mobile.svg), url(../img/back-mobile@2x.jpg)
+
+@media (min-width: 768px)
+	.intro
+		min-height: 520px
+		background-image: url(../img/bg-intro-triangle-tablet.svg), url(../img/back-desktop.jpg)
+		background-size: contain, cover
+		&__text
+			width: 460px
+			height: 350px
+	@media (min-resolution: 1.5dppx)
+		.intro
+			background-image: url(../img/bg-intro-triangle-desktop.svg), url(../img/back-desktop@2x.jpg)
+@media (min-width: 1200px)
+	.intro
+		min-height: 520px
+		background-image: url(../img/bg-intro-triangle-desktop.svg), url(../img/back-desktop.jpg)
+		background-size: contain, cover

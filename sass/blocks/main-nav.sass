@@ -1,0 +1,101 @@
+.main-nav
+	position: relative
+
+	&__list
+		margin: 0
+		padding: 0
+		text-align: center
+	&__item
+		
+		list-style-type: none
+		background-color: $accent
+		padding: 20px 0px
+		border-bottom: 2px solid #4F90AA
+		box-shadow: 0px -1px 1px 0px #87C3DD
+		&:hover
+			background-color: #669EBF
+			cursor: pointer
+		&:active
+			background-color: #5596BE
+			a
+				color: #95B9D3
+		&:last-child
+			border-bottom: none	
+			background-color: #fff
+			position: relative
+			min-height: 60px
+			padding: 0
+	&__link
+		ont-size: 18px
+		font-weight: 700
+		line-height: 0
+		color: #fff
+		text-decoration: none
+		text-transform: uppercase
+	&__hide
+		position: absolute
+		top: 17px
+		right: 20px
+		background-color: transparent
+		border: none
+		cursor: pointer
+		&-icon
+			fill: #fff
+	&__show
+		background-color: transparent
+		padding: 0	
+		border: none
+		cursor: pointer
+		position: absolute
+		right: 20px
+		top: 18px
+		&-icon
+			fill: $accent	
+.main-logo
+	position: absolute
+	left: 50%
+	transform: translate(-50%, 0)
+
+
+@media (min-width: 768px)
+	.main-nav
+		&__list
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-around
+		&__item
+			background-color: transparent
+			border: none
+			box-shadow: none
+			&:hover
+				background-color: transparent
+				cursor: pointer
+				a
+					color: $accent
+			&:active
+				background-color: transparent
+				a
+					color: #D4D4D4
+
+			&:nth-child(1)
+				order: 0
+			&:nth-child(2)
+				order: 1
+			&:nth-child(3)
+				order: 3
+			&:nth-child(4)
+				order: 4
+			&:nth-child(5)
+				order: 2
+		&__link
+			color: #000		
+		&__hide
+			display: none
+		&__show
+			display: none
+	
+
+		

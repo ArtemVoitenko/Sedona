@@ -1,0 +1,152 @@
+.reasons
+	&__main-title
+		font-size: 18px
+		font-weight: bold
+		text-transform: uppercase
+		text-align: center
+		margin-top: 30px
+		line-height: 26px
+	&__look-reasons
+		font-size: 14px
+		text-transform: uppercase
+		text-align: center
+		line-height: 26px
+		margin-top: 30px
+
+	&__box
+		padding: 30px	
+		background-size: 104%
+		background-position: top
+		background-repeat: no-repeat
+		background-color: $accent
+		text-transform: uppercase
+		text-align: center
+		color: #fff
+		&--angled
+			background-image: url(../img/bg-triangle.svg)
+			padding-top: 70px	
+		&--decorated
+			border-bottom: 1px solid #D7D7D7
+			background-color: #EFEFEF
+			color: #000
+			&:last-child
+				border-bottom: none
+	&__container
+		background-color: #EFEFEF
+		padding: 0 30px
+	&__name
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+	&__number
+		font-size: 14px
+	&__description
+		line-height: 26px
+		font-size: 14px	
+		text-transform: uppercase
+	&__items
+		padding: 15px 30px 20px 30px	
+	&__item
+		padding-left: 50px
+		padding-right: 50px
+		margin-top: 30px
+		position: relative
+	&__icon
+		fill: $accent
+		position: absolute
+		left: 0px
+		top: -10px
+		&:nth-child(1)
+			width: 39px
+			height: 37px
+		&:nth-child(2)
+			width: 32px
+			height: 38px
+		&:nth-child(3)
+			width: 40px
+			height: 35px
+	&__img
+		width: 100%
+@media (min-width: 768px)
+	.reasons
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		flex-grow: 1
+		&__header
+			width: 100%
+			margin-bottom: 60px
+		&__box
+			background-image: none
+			width: 33%
+			max-height: 256px
+			box-sizing: border-box
+			padding: 40px 47px
+		&__items
+			width: 100%
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			text-align: center
+			padding: 0
+		&__item
+			width: 33%
+			padding: 35px
+			padding-bottom: 45px
+		&__img
+			flex-grow: 1
+	
+		&__container
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-grow: 1
+			padding: 0	
+			margin-top: -2px	
+		&__name
+			margin: 0
+			font-size: 21px	
+			margin-bottom: 10px	
+		&__icon
+			position: relative
+			display: block
+			margin: 0 auto
+			margin-bottom: 20px
+			&:nth-child(1)
+				width: 75px
+				height: 72px
+			&:nth-child(2)
+				width: 77px
+				height: 68px
+			&:nth-child(3)
+				width: 64px
+				height: 75px
+	.ordered-flex
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		.reasons__box
+			order: 1
+
+
+@media (min-width: 1200px)	
+	.reasons
+		&__box
+			padding: 60px	
+
+
+
+		
+
+

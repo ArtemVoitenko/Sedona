@@ -1,0 +1,28 @@
+.social
+	margin: 0
+	padding: 0
+	&__item
+		list-style-type: none
+		width: 50px
+		height: 50px
+		background-color: $accent
+		margin-right: 7px
+		display: inline-block
+		&:hover
+			background-color: #669EBF
+			cursor: pointer
+		&:active
+			background-color: #5596BE
+			svg
+				fill: #95B9D3
+	&__link
+		text-decoration: none
+		display: block
+		height: 100%
+		position: relative	
+	&__icon
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		fill:#fff
