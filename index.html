@@ -1,11 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sedona</title>
-</head>
-<body>
-	
-</body>
-</html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preload" href="css/style.min.css" as="style">
+		<link rel="preload" href="/fonts/PTSansRegular.woff" as="font">
+		<link rel="preload" href="/fonts/PTSansBold.woff" as="font">
+		<link rel="stylesheet" href="css/style.min.css">
+		<title>Sedona</title>
+	</head>
+	<body>
+		<div style= "display: none">
+		<include src="build/img/sprite.svg" ></include>
+		</div>
+		</div>
+		<header class="main-header">
+			<div class="container">
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item mobile-hidden"><a href="#" class="main-nav__link">главная</a></li>
+						<li class="main-nav__item mobile-hidden"><a href="#" class="main-nav__link">фото и видео</a></li>
+						<li class="main-nav__item mobile-hidden"><a href="#" class="main-nav__link">форма отзыва</a></li>
+						<li class="main-nav__item mobile-hidden"><a href="#" class="main-nav__link">о нас</a></li>
+						<li class="main-nav__item">
+							<a href="#" class="main-logo">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+									<img src="img/logotype-mobile.svg" alt="">
+								</picture>
+							</a>
+							<button class="main-nav__show">
+							<svg class="main-nav__show-icon" width="21" height="23">
+								<use xlink:href="#icon-open-menu"></use>
+							</svg>
+							</button>
+						</li>
+					</ul>
+					<button class="main-nav__hide mobile-hidden">
+					<svg class="main-nav__hide-icon" width="21" height="23">
+						<use xlink:href="#icon-close-menu"></use></svg>
+						</button>
+					</nav>
+				</div>
+			</header>
+			<section class="intro">
+				<img class="intro__text" src="img/text-sedona-index.svg" alt="Welcome to Sedona">
+			</section>
+			<div class="inner-container">
+				<section class="reasons">
+					<header class="reasons__header">
+						<div class="inner-wrapper">
+							<h2 class="reasons__main-title">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+							<p class="reasons__look-reasons">рассмотрим 5 причин, по которым седона круче чем гранд каньен!</p>
+						</div>
+					</header>
+					<div class="reasons__box reasons__box--angled">
+						<h3 class="reasons__name">настоящий городок</h3>
+						<span class="reasons__number">- №1 -</span>
+						<p class="reasons__description">седона не аттракцион для туристов, там течет своя жизнь</p>
+					</div>
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-city@1x-desc.jpg,
+						img/photo-city@1x-desc@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-city@1x-tablet.jpg,
+						img/photo-city@1x-tablet@2x.jpg 2x">
+						<img class="reasons__img" src="img/photo-city@1x.jpg" srcset="img/photo-city@1x@2x.jpg 2x" alt="">
+					</picture>
+					<div class="reasons__items">
+						<div class="reasons__item">
+							<svg class="reasons__icon">
+								<use xlink:href="#icon-house"></use>
+							</svg>
+							<span class="reasons__name">жилье</span>
+							<p class="reasons__description reasons__description--colored">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+						</div>
+						<div class="reasons__item">
+							<svg class="reasons__icon">
+								<use xlink:href="#icon-gift"></use>
+							</svg>
+							<span class="reasons__name">сувениры</span>
+							<p class="reasons__description reasons__description--colored">не только китайского, но и местного производства!</p>
+						</div>
+						<div class="reasons__item">
+							<svg class="reasons__icon">
+								<use xlink:href="#icon-burger"></use>
+							</svg>
+							<span class="reasons__name">еда</span>
+							<p class="reasons__description reasons__description--colored">всегда заказывайте фирменный бургер, вы не разочfруетесь!</p>
+						</div>
+					</div>
+					<div class="ordered-flex">
+						<div class="reasons__box">
+							<h3 class="reasons__name">Там есть мост дьявола</h3>
+							<span class="reasons__number">- №2 -</span>
+							<p class="reasons__description">да, по нему можно пройти, если вы осмелитесь, конечно</p>
+						</div>
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-bridge@1x-desc.jpg,
+							img/photo-bridge-desc@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="img/photo-bridge@1x-tablet.jpg,
+							img/photo-bridge@1x-tablet@2x.jpg 2x">
+							<img class="reasons__img" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@1x@2x.jpg 2x" alt="">
+						</picture>
+					</div>
+					<div class="reasons__container">
+						<div class="reasons__box reasons__box--decorated">
+							<h3 class="reasons__name ">небольшая площадь</h3>
+							<span class="reasons__number">- №3 -</span>
+							<p class="reasons__description">все интересные места находятся очень близко!</p>
+						</div>
+						<div class="reasons__box reasons__box--decorated">
+							<h3 class="reasons__name">красивая дорога</h3>
+							<span class="reasons__number">- №4 -</span>
+							<p class="reasons__description">ехать в седону из лас-вегаса совсем не скучно!</p>
+						</div>
+						<div class="reasons__box reasons__box--decorated">
+							<h3 class="reasons__name">мало туристов</h3>
+							<span class="reasons__number">- №5 -</span>
+							<p class="reasons__description">большинство едет в гранд каньен и толпится там</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="booking">
+				<div class="hostel inner-wrapper">
+					<span class="hostel__title">заинтересовались?</span>
+					<p class="hostel__description">укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<button class="hostel__find">найти гостиницу</button>
+				</div>
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361171.70098844!2d-111.83690246750854!3d34.64474533167745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1529955801316" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+			</section>
+			<footer class="main-footer">
+				<a href="#" class="main-footer__hash">#visitsedona</a>
+				<ul class="social">
+					<li class="social__item">
+						<a href="#" class="social__link">
+							<svg class="social__icon" width="18" height="14">
+								<use xlink:href="#icon-twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link">
+							<svg class="social__icon" width="9" height="18">
+								<use xlink:href="#icon-facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link">
+							<svg class="social__icon" width="20" height="14">
+								<use xlink:href="#icon-youtube"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<div class="htmlacademy">
+					<a href="#" class="htmlacademy__text">разработано <img class="htmlacademy__img" src="img/htmlacademy.svg" alt=""></a>
+				</div>
+			</footer>
+			<script src="js/script.min.js"></script>
+		</body></html>
