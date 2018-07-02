@@ -14,3 +14,4 @@ function hideNav() {
     this.classList.add("mobile-hidden") } 
     showNavBtn.addEventListener("click", showNav), 
     hideNavBtn.addEventListener("click", hideNav);
+ console.log("hello");
